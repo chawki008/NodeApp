@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("registry.hub.docker.com/chawki008/devops_training_test_008")
+        app = docker.build("chawki008/devops_training_test_008")
         app.push()
     }
 
