@@ -11,7 +11,6 @@ node {
         /* This builds the actual image */
 
         app = docker.build("chawki008/devops_training_test_008")
-        app.push()
     }
 
     stage('Test image') {
